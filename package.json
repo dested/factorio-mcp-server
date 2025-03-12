@@ -1,0 +1,33 @@
+{
+  "name": "factorio-mcp-server",
+  "version": "0.1.0",
+  "description": "ModelContextProtocol starter server",
+  "type": "module",
+  "scripts": {
+    "make-executable": "node -e \"fs.chmodSync('dist/index.cjs', '755');\" --require fs",
+    "build": "esbuild index.ts --outfile=dist/index.cjs --bundle --platform=node --format=cjs --banner:js=\"#!/usr/bin/env node\" && npm run make-executable",
+    "watch": "esbuild index.ts --outfile=dist/index.cjs --bundle --platform=node --format=cjs --banner:js='#!/usr/bin/env node' --watch",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.cjs",
+    "dev": "concurrently \"npm run watch\" \"npm run inspect\"",
+    "prepublishOnly": "npm run build"
+  },
+  "bin": {
+    "factorio-mcp-server": "./dist/index.cjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "factorio-blueprint": "^2.6.5",
+    "zod": "^3.24.2",
+    "zod-to-json-schema": "^3.24.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "concurrently": "9.1.2",
+    "esbuild": "^0.25.1",
+    "prettier": "3.5.3",
+    "typescript": "5.5.4"
+  }
+}

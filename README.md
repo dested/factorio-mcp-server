@@ -1,3 +1,12 @@
+# Factorio MCP Server
+
+this doesnt work lol
+
+
+
+
+
+
 # MCP Starter Server
 
 A minimal [ModelContextProtocol](https://modelcontextprotocol.io) server template for building AI assistant tools. This starter provides a basic structure for creating MCP tools that can be used with AI assistants like Claude.
