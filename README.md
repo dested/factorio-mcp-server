@@ -4,6 +4,10 @@ this doesnt work lol
 
 
 
+ - todo
+    - use this instead https://github.com/teoxoy/factorio-blueprint-editor/blob/master/packages/editor/
+    - generate an image after every request 
+
 
 
 

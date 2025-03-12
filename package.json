@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.7.0",
+    "@fbe/editor": "^1.7.0",
     "factorio-blueprint": "^2.6.5",
     "zod": "^3.24.2",
     "zod-to-json-schema": "^3.24.3"
